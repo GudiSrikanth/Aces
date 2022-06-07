@@ -13,7 +13,12 @@ body {
 .m-5-auto {
     margin: 5rem auto
 }
-
+.h1{
+    margin-left: 100px;
+    margin-right: 100px;
+    
+    
+}
 .primary-button {
     margin-top: 5rem;
     margin-right: 1rem;
@@ -45,6 +50,13 @@ body {
     font-size: 2.5rem;
     text-Transform: capitalize
 }
+.header {
+    overflow: hidden;
+    background-color: rgb(231, 171, 60);
+    /* background-color: #f6f6fc; */
+    padding: 20px 10px;
+    padding-left: 80%;
+  }
 
 #reg_btn span {
     display: inline-block;
