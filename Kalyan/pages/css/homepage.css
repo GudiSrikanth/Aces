@@ -1,3 +1,5 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;800&display=swap");
+
 * {
 	margin: 0;
 	padding: 5;
@@ -115,10 +117,15 @@
 	font-family: 'roboto', sans-serif;
 }
 
-.bottom-right {
-position : absolute;
-bottom: 8px;
-right: 40px;
-color: #ffffe0;
-font-family: 'roboto', sans-serif;
+#footer {
+	box-sizing: border-box;
+	font-family: 'Poppins', sans-serif;
+	position: static;
+	min-height: 0vh;
+	padding: 50px 100px;
+	background-color: white;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	top: 170%;
 }
