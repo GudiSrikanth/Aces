@@ -1,0 +1,70 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+          integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+   <title>AdminPage</title>
+</head>
+<body>
+<nav class="navbar navbar-expand-lg navbar-light bg-light" >
+    <div class="container-fluid">
+        <a class="navbar-brand" href="#">
+            <img th:src="@{/images/logo.png}"  src="C:\Users\user\Downloads\Ace_logo.00" width="auto" height="43" class="d-inline-block align-top" alt=""/><h4 style="color:lightslategray;">ACES</h4>
+        </a>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mr-auto"></ul>
+            <ul class="navbar-nav">
+                <li class="nav-item active">
+                    <a class="nav-link" th:href="@{/admin}" href="#" hover="color:white">Home</a>
+                </li>
+                <li class="nav-item active">
+                    <a class="nav-link" th:href="@{/logout}" href="#">Logout</a>
+                </li>
+
+            </ul>
+
+        </div>
+    </div>
+</nav>
+<div class="jumbotron text-center">
+    <h1 class="display-4">Welcome back, Admin</h1>
+    <p>Easily manage your data from this adminpage</p>
+</div>
+<div class="container-fluid">
+    <div class="row">
+        <div class="col-sm-3 pt-3" >
+            <div class="card" style="background-color:white;">
+                <div class="card-body">
+                    <h4 class="card-title">Categories</h4>
+                    <p class="card-text">Manage the categories section here.</p>
+                    <a href="#" th:href="@{/admin/categories}" class="card-link btn btn-primary">Manage</a>
+
+                </div>
+            </div>
+        </div>
+        <div class="col-sm-3 pt-3" >
+            <div class="card" style="background-color:white;">
+                <div class="card-body">
+                    <h4 class="card-title">Products</h4>
+                    <p class="card-text">Manage all the products here.</p>
+                    <a href="#" th:href="@{/admin/products}" class="card-link btn btn-primary">Manage</a>
+                </div>
+            </div>
+        </div>
+        <div class="col-sm-3 pt-3" >
+            <div class="card" style="background-color:white;">
+                <div class="card-body">
+                    <h4 class="card-title">Coupon</h4>
+                    <p class="card-text">Manage all your coupons here.</p>
+                    <a href="https://www.grabon.in" th:href="@{/admin/coupons}" class="card-link btn btn-primary">Manage</a>
+                </div>
+            </div>
+        </div>
+     </div>
+</div>
+</body>
+</html>
